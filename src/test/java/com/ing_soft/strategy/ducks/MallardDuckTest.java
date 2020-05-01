@@ -31,5 +31,11 @@ public class MallardDuckTest {
 		MallardDuck mallard = new MallardDuck();
 		assertEquals("I'm a real Mallard duck", mallard.display());
 	}
+	
+	@Test
+	public void mallardDuckShouldFlyWithWings() {
+		MallardDuck mallard = new MallardDuck();
+		assertEquals("I'm flying!!", mallard.performFly());
+	}
 
 }
