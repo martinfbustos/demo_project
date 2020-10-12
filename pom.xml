@@ -18,7 +18,7 @@
 
 		<!-- JaCoCo properties -->
 		<jacoco.version>0.8.5</jacoco.version>
-		<jacoco.percentage.instruction>0.10</jacoco.percentage.instruction>
+		<jacoco.percentage.instruction>0.40</jacoco.percentage.instruction>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -95,13 +95,14 @@
 					</execution>
 					<execution>
 						<id>check</id>
+						<phase>package</phase>
 						<goals>
 							<goal>check</goal>
 						</goals>
 						<configuration>
 							<rules>
 								<rule>
-									<element>PACKAGE</element>
+									<element>BUNDLE</element>
 									<limits>
 										<limit>
 											<counter>INSTRUCTION</counter>
