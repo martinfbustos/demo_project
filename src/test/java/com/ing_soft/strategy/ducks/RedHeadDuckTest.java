@@ -38,4 +38,11 @@ public class RedHeadDuckTest {
 		assertEquals("I'm flying!!", redHeadDuck.performFly());
 	}
 
+	
+	@Test
+	public void redHeadDuckShouldQuack() {
+		RedHeadDuck redHeadDuck = new RedHeadDuck();
+		assertEquals("Quack!", redHeadDuck.performQuack());
+	}
+	
 }

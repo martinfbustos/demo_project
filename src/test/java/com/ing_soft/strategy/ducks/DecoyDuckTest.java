@@ -8,7 +8,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-public class MallardDuckTest {
+public class DecoyDuckTest {
 
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
@@ -27,22 +27,23 @@ public class MallardDuckTest {
 	}
 
 	@Test
-	public void duckShouldBeAMallard() {
-		MallardDuck mallard = new MallardDuck();
-		assertEquals("I'm a real Mallard duck", mallard.display());
+	public void duckShouldBeADecoyDuck() {
+		DecoyDuck decoyDuck = new DecoyDuck();
+		assertEquals("I'm a Decoy Duck", decoyDuck.display());
 	}
 	
 	@Test
-	public void mallardDuckShouldFlyWithWings() {
-		MallardDuck mallard = new MallardDuck();
-		assertEquals("I'm flying!!", mallard.performFly());
+	public void decoyDuckShouldNotFly() {
+		DecoyDuck decoyDuck = new DecoyDuck();
+		assertEquals("I can't fly", decoyDuck.performFly());
 	}
 
+	
 	@Test
-	public void mallardDuckShouldQuack() {
-		MallardDuck mallard = new MallardDuck();
-		assertEquals("Quack!", mallard.performQuack());
+	public void decoyDuckShouldSquek() {
+		DecoyDuck decoyDuck = new DecoyDuck();
+		assertEquals("<< Silence >>", decoyDuck.performQuack());
 	}
-	
-	
+
+
 }

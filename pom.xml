@@ -17,8 +17,8 @@
 		<maven.compiler.target>1.7</maven.compiler.target>
 
 		<!-- JaCoCo properties -->
-		<jacoco.version>0.8.5</jacoco.version>
-		<jacoco.percentage.instruction>0.40</jacoco.percentage.instruction>
+		<jacoco.version>0.8.3</jacoco.version>
+		<jacoco.percentage.instruction>0.80</jacoco.percentage.instruction>
 	</properties>
 	<dependencies>
 		<dependency>
@@ -107,7 +107,7 @@
 										<limit>
 											<counter>INSTRUCTION</counter>
 											<value>COVEREDRATIO</value>
-											<minimum>${jacoco.percentage.instruction}</minimum>
+											<minimum>0.80</minimum>
 										</limit>
 									</limits>
 								</rule>

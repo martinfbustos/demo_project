@@ -12,7 +12,7 @@ public class DecoyDuck extends Duck {
 	}
 	
 	public String display() {
-		return "I'am a Decoy Duck";
+		return "I'm a Decoy Duck";
 	}
 
 }
