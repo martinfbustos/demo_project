@@ -24,7 +24,7 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.11</version>
+			<version>4.13.1</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
@@ -73,13 +73,7 @@
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
 				<version>0.8.3</version>
-				<configuration>
-					<excludes>
-						<exclude>com/ing_soft/strategy/*.class</exclude>
-						<exclude>com/ing_soft/strategy/fly/*.class</exclude>
-						<exclude>com/ing_soft/strategy/quack/*.class</exclude>
-					</excludes>
-				</configuration>
+				
 				<executions>
 					<execution>
 						<goals>
@@ -107,7 +101,7 @@
 										<limit>
 											<counter>INSTRUCTION</counter>
 											<value>COVEREDRATIO</value>
-											<minimum>0.80</minimum>
+											<minimum>0.10</minimum>
 										</limit>
 									</limits>
 								</rule>
